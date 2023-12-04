@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Object</title>
+        
+        
+    </head>
+    <body>
+        
+        <script>
+          const product={
+            name:'socks',
+            price:1090
+
+          }
+          product.name='cotton socks';
+          product.newProperty=true;
+          product.newName='Rajendra Nath Murmu';
+          console.log(product);
+          delete product.newProperty;
+          console.log(product);
+          console.log(JSON.stringify(product));
+          const jsonString=JSON.stringify(product);
+          console.log(JSON.parse(jsonString));
+        </script>
+    </body>
+</html>
+
+

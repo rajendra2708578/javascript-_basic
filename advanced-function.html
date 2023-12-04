@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Advanced function</title>
+        
+        
+    </head>
+    <body>
+      <button class="js-button">click</button>
+        <script>
+          // const function1=function greeting(){
+          //   console.log('hello');
+          // };
+          // function1();
+          // const object1={
+          //   num:2,
+          //   fun:function greeting(){
+          //     console.log("hello3");
+              
+          //   }
+          // };
+          // object.fun();
+          // setTimeout(function(){
+          //   console.log("it work after 6 sec");
+          // },3000);
+            const buttonElement=document.querySelector('.js-button');
+            buttonElement.addEventListener('click',()=>{
+              console.log('click');
+            });
+
+            [
+              'make dinner',
+              'watch youtue',
+              'do rest of work'
+            ].forEach((value)=>{
+              console.log(value);
+            })
+            const oneParam=(param)=>{
+                console.log(param+1);
+            };
+            oneParam(3);
+            const onLine=()=>4+5;
+            console.log(onLine());
+        </script>
+    </body>
+</html>
+
+
